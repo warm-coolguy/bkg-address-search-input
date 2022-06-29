@@ -1,6 +1,6 @@
 {
   "name": "bkg-address-search-input",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "input element for bkg address search service",
   "main": "dist/index.js",
   "scripts": {
@@ -24,12 +24,10 @@
       "includeNodeModules": true
     }
   },
-  "dependencies": {
-    "pug": "^3.0.2",
-    "vue": "^3.2.37"
-  },
   "devDependencies": {
     "@parcel/transformer-vue": "^2.6.2",
-    "parcel": "^2.6.2"
+    "parcel": "^2.6.2",
+    "pug": "^3.0.2",
+    "vue": "^3.2.37"
   }
 }
