@@ -7,5 +7,5 @@ dist
 
 pages/index.html
 
-./index.js
-./index.js.map
+/index.js
+/index.js.map
