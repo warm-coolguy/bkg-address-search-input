@@ -14,7 +14,9 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: npm set //registry.npmjs.org/:_authToken ${{secrets.NPM_TOKEN}},
+      - run: git config user.email "bot@example.com"
+      - run: git config user.name "Bot"
+      - run: npm set //registry.npmjs.org/:_authToken ${{secrets.NPM_TOKEN}}
       - run: npm i --ci
       - run: npm test
       - run: node ./scripts/publish.js
