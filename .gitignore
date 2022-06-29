@@ -6,3 +6,6 @@ dist-dev
 dist
 
 pages/index.html
+
+./index.js
+./index.js.map

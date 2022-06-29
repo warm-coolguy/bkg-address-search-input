@@ -5,10 +5,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "parcel dev/index.html --dist-dir dist-dev",
-    "buildPackage": "parcel build src/index.js --dist-dir dist",
+    "buildPackage": "parcel build src/index.js --dist-dir .",
     "buildPages": "parcel build dev/index.html --dist-dir pages",
     "prepublish": "npm run buildPackage"
   },
+  "files": [
+    "index.js",
+    "index.js.map",
+    "CHANGELOG.md",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/warm-coolguy/bkg-address-search-input.git"
