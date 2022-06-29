@@ -1,0 +1,22 @@
+name: Publish with updated changelog to npmjs.org
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm i --ci
+      - run: npm test
+      - run: node ./scripts/publish.js
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - uses: EndBug/add-and-commit@v7

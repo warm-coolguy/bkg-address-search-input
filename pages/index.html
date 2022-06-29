@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>🔎 BKG Address Search</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: Roboto;">
+    <h1>Test page</h1>
+    <h2>Search input</h2>
+    <div id="bkg-address-search-input"></div>
+    <h2>Callback example</h2>
+    <p>Last callback result: <span id="target-results" /></p>
+    <script type="module">
+      import createBkgAddressSearchInput from '../src/index.js'
+      createBkgAddressSearchInput({
+        divId: "bkg-address-search-input",
+        callback: (results => {
+          // TODO print both input and clicked result
+          document
+            .getElementById("target-results")
+            .innerHTML = JSON.stringify(results, null, 2)
+        })
+      });
+    </script>
+  </body>
+</html>

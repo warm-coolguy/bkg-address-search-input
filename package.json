@@ -1,0 +1,35 @@
+{
+  "name": "bkg-address-search-input",
+  "version": "0.0.0",
+  "description": "input element for bkg address search service",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "dev": "parcel pages/index.html --dist-dir dist-dev",
+    "buildPackage": "parcel build src/index.js",
+    "prepublish": "npm run buildPackage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warm-coolguy/bkg-address-search-input.git"
+  },
+  "author": "Dennis Sen <dennis.sen@dataport.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warm-coolguy/bkg-address-search-input/issues"
+  },
+  "homepage": "https://github.com/warm-coolguy/bkg-address-search-input#readme",
+  "targets": {
+    "main": {
+      "includeNodeModules": true
+    }
+  },
+  "dependencies": {
+    "pug": "^3.0.2",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}
