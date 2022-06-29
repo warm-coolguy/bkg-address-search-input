@@ -2,11 +2,11 @@
   "name": "bkg-address-search-input",
   "version": "0.1.0",
   "description": "input element for bkg address search service",
-  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "dev": "parcel pages/index.html --dist-dir dist-dev",
-    "buildPackage": "parcel build src/index.js",
+    "dev": "parcel dev/index.html --dist-dir dist-dev",
+    "buildPackage": "parcel build src/index.js --dist-dir dist",
+    "buildPages": "parcel build dev/index.html --dist-dir pages",
     "prepublish": "npm run buildPackage"
   },
   "repository": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/warm-coolguy/bkg-address-search-input#readme",
   "targets": {
-    "main": {
+    "*": {
       "includeNodeModules": true
     }
   },

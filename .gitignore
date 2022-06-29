@@ -1,5 +1,8 @@
 .parcel-cache
 .npmrc
+
 node_modules
 dist-dev
 dist
+
+pages/index.html
